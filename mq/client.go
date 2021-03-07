@@ -15,8 +15,8 @@ func createMq(name string, host string, port string) *MessageQueue {
 		name:     name,
 		host:     host,
 		port:     port,
-		outgoing: &Queue{},
-		incoming: &Queue{},
+		outgoing: nil,
+		incoming: nil,
 		shutdown: false,
 	}
 
