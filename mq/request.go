@@ -14,6 +14,7 @@ func createRequest(method string, uri string, body string) *Request {
 		uri:    uri,
 		body:   body,
 		next:   nil,
+		prev:   nil,
 	}
 
 	return newRequest
